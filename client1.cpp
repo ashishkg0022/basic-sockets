@@ -1,6 +1,6 @@
 
-#include<stdio.h> 
-#include<string.h>    
+#include<stdio.h> //header file
+#include<string.h>    //header file
 #include<string>  
 #include<sys/socket.h>    
 #include<arpa/inet.h> 
@@ -18,7 +18,7 @@ int main(int argc , char *argv[])
    
     socket_desc = socket(AF_INET , SOCK_STREAM , 0);
      
-    if (socket_desc == -1)
+    if (socket_desc == -1)//for negative value
     {
         printf("Could not create socket");
     }
@@ -26,7 +26,7 @@ int main(int argc , char *argv[])
 
  server.sin_addr.s_addr = inet_addr("127.0.0.1");
  server.sin_family = AF_INET;    server.sin_port = htons(8989);
-  if (connect(socket_desc,(struct sockaddr*)&server,sizeof(server)) < 0)
+  if (connect(socket_desc,(struct sockaddr*)&server,sizeof(server)) < 0)//to connect 
     {
        cout <<"connect error";
         return 1;
