@@ -1,7 +1,8 @@
+
 # basic-sockets
-two clients in c++ and a server in python
-a simple sever and client project 
-in this two clients reads data from two separate text files 
-and send to server 
-in return server returns the sorted data 
+
+This project is a simple server and client project. In this, there are two clients that read data from two separate text files and send it to the server. The server returns the data in a sorted order.
+
+The two clients have been coded in C++, while the server is in Python.
+
 
